@@ -2,14 +2,14 @@
 // Connect to MySQL
 include_once 'configurazioneDB.php';
    	$email=$_POST['email'];
-    $to ="andreapiccolo95@gmail.com";//$_SESSION['email'];
+    $to ="$email";//$_SESSION['email'];
     $subject = "Crea la tua nuova password qui";
     $boundary = "==MP_Bound_xyccr948x=="; /*Separatore per il "multipart message"*/
     
     //versione del MIME
     $headers = "MIME-Version: 1.0\r\n";
-    //multipart/alternative per indicare che il messaggio � costituito da pi� parti
-    //(�multipart�) le quali sono tra loro alternative (�alternative�). Separate dal BOUNDARY
+    //multipart/alternative per indicare che il messaggio e' costituito da piu' parti
+    //(multipart )quali sono tra loro alternative (alternative). Separate dal BOUNDARY
     $headers .= "Content-type: multipart/alternative; boundary='$boundary'\r\n";
     // costruiamo intestazione generale
     $headers .= "From: miaemail@gmail.com \r\n";
