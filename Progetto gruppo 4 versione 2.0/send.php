@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Messaggio Reset Password - Borsa delle idee</title>
+</head>
+<body>
 <?php
 // Connect to MySQL
 include_once 'configurazioneDB.php';
@@ -70,3 +76,5 @@ include_once 'configurazioneDB.php';
    
    
    ?>
+</body>
+</html>
